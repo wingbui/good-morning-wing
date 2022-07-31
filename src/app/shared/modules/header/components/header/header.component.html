@@ -8,15 +8,15 @@
     <a class="text-sm tracking-wider">skills</a>
     <img
       (click)="selectMode('bright')"
-      src="../../../../../../assets/icons8-sun.svg"
+      src="../../../../../../assets/icons8-sun-48.png"
       alt="bright mode"
-      class="w-8 h-8 cursor-pointer"
+      class="w-10 h-10 cursor-pointer"
       *ngIf="(themeMode$ | async) === 'dark'"
     />
     <img
-      src="../../../../../../assets/1396821_brightness_dark_darkness_moon_night_icon.svg"
+      src="../../../../../../assets/icons8-full-moon-48.png"
       alt="dark mode"
-      class="w-8 h-8 cursor-pointer"
+      class="w-10 h-10 cursor-pointer"
       (click)="selectMode('dark')"
       *ngIf="(themeMode$ | async) === 'bright'"
     />
